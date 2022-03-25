@@ -13,7 +13,6 @@ function Home() {
         <div className='navbar'>
             <h1>Eatery</h1>
             <div>
-                <Link to='/'>Home</Link>
             </div>
         </div>
     )

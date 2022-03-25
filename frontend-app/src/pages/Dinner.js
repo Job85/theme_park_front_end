@@ -4,18 +4,29 @@ import axios from 'axios'
 import { BASE_URL } from '../globals'
 
 const Dinner = () => {
+    const [menuDinner, setDinner] = useState({})
+
     useEffect(() => {
         const getDinner = async () => {
             const res = await axios.get(`${BASE_URL}/Dinner`)
-            console.log(res)
+            console.log(res.data)
+            setDinner(res.data)
         }
         getDinner()
     }, [])
+    console.log(menuDinner)
     return (
         <div className='navbar'>
             <h1>All American Grill</h1>
-            <h2>Menu</h2>
-            <div >
+            <h2>Dinner Menu</h2>
+            <div>
+                <ul>
+                    {menuDinner.map((element, index) => (
+                        <li>
+                            ${element.price} {element.item}
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     )
