@@ -1,10 +1,15 @@
 // import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import Home from './pages/Home'
-function App() {
+import Header from './components/Header';
+import Home from './pages/Home';
+import Desserts from './pages/Desserts';
+import Dinner from './pages/Dinner';
+
+const App = () => {
   return (
-    <div className="App">
+    <div className='Header'>
+      <Header />
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -13,7 +18,7 @@ function App() {
         </Routes>
       </main>
     </div>
-  );
+  )
 }
 
 export default App;
