@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 
+
 const Header = () => {
 
     return (
         <header>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="./Dinner">Dinner</Link>
-                <Link to="./Desserts">Dessert</Link>
+                <Link to="/" className='link'>Home</Link>
+                <Link to="./Dinner" className='link'>Dinner</Link>
+                <Link to="./Desserts" className='link'>Dessert</Link>
             </nav>
         </header>
     )

@@ -1,11 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { BASE_URL } from '../globals'
+import { useEffect, useState } from 'react'
 
-const Home = () => {
+
+function Home() {
+    const [site, setSite] = useState();
+
 
     return (
         <div className='navbar'>
-            <h2>Eatery</h2>
+            <h1>Eatery</h1>
             <div>
                 <Link to='/'>Home</Link>
             </div>

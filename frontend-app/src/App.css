@@ -1,5 +1,15 @@
-.App {
+.Header {
+  margin: 20px;
   text-align: center;
 }
 
+.link {
+  margin-top: 20px;
+  padding: 3px;
+  border: 2px solid cornflowerblue;
+  color:darkslateblue
+}
 
+/* . {
+  background-color: darkgrey;
+} */
