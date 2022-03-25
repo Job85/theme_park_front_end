@@ -1,1 +1,8 @@
-# theme_park_front_end
+# Eateries
+Tired of waiting in the long lines just for food? Then this app is for you. Order your food ahead of time to pick up at vendor window and get back to the reason why you're here, THE RIDES.
+
+## All American Grill
+
+
+## Grandma's Fried Goodies
+
