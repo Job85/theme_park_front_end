@@ -1,15 +1,41 @@
+
+body{
+  background: rgb(40,40,40)
+
+}
+
 .Header {
   margin: 20px;
   text-align: center;
+  border-bottom: 3px solid rgb(200,200,200)
 }
 
+h1{
+  color: rgb(200,200,200)
+}
+h2{
+  color: rgb(200,101,63)
+}
 .link {
   margin-top: 20px;
   padding: 3px;
-  border: 2px solid cornflowerblue;
-  color:darkslateblue
+ border: 2px solid cornflowerblue;
+  color:rgb(244, 232, 104)
 }
 
-/* . {
-  background-color: darkgrey;
-} */
+a{
+  color: rgb(200,200,200);
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(200,160,101);
+}
+li {
+  color: rgb(200,160,101);
+  list-style: none;
+  padding: 8px 0 8px 0;
+}
+
+.homeP {
+  color: chartreuse;
+}

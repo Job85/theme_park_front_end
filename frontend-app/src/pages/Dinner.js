@@ -4,11 +4,11 @@ import axios from 'axios'
 import { BASE_URL } from '../globals'
 
 const Dinner = () => {
-    const [menuDinner, setDinner] = useState({})
+    const [menuDinner, setDinner] = useState([])
 
     useEffect(() => {
         const getDinner = async () => {
-            const res = await axios.get(`${BASE_URL}/Dinner`)
+            const res = await axios.get(`${BASE_URL}/dinner`)
             console.log(res.data)
             setDinner(res.data)
         }
@@ -21,9 +21,9 @@ const Dinner = () => {
             <h2>Dinner Menu</h2>
             <div>
                 <ul>
-                    {menuDinner.map((element, index) => (
+                    {menuDinner.map((element) => (
                         <li>
-                            ${element.price} {element.item}
+                            {element.item} ${element.price}
                         </li>
                     ))}
                 </ul>

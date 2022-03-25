@@ -13,6 +13,7 @@ function Home() {
         <div className='navbar'>
             <h1>Eatery</h1>
             <div>
+                <p className='homeP'>Click the links above for menu options</p>
             </div>
         </div>
     )
