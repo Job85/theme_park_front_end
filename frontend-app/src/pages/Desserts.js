@@ -7,7 +7,7 @@ const Desserts = () => {
     useEffect(() => {
         const getDesserts = async () => {
             const res = await axios.get(`${BASE_URL}/desserts`)
-            console.log(res)
+            console.log(res.data)
         }
         getDesserts()
     }, [])
